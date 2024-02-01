@@ -21,6 +21,12 @@ class ReviewFileTest {
         //expect
         assertThat(reviewFile.getJavaClassName()).isEqualTo(MAIN_JAVA_CLASS_NAME);
     }
+    @Test
+    void shoudthFail() {
+        int test= 6;
+        int test2 = 8;
+        assertThat(test.isEqualTo(test2);
+    }
 
     @Test
     void shouldReturnMainJavaSourceDirectory() {
