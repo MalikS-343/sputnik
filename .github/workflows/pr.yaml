@@ -22,4 +22,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: >
-          ./gradlew build jacocoTestReport
+          ./gradlew build
