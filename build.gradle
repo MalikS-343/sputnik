@@ -165,11 +165,12 @@ dependencies {
 test {
     useJUnitPlatform()
     testLogging {
-        events "passed", "skipped", "failed"
-        showStandardStreams = true
-        exceptionFormat = 'full'
+        events "passed", "failed", "skipped"
+        exceptionFormat = 'short' // Reduce the verbosity of the exceptions
+        summary = true // Ensure summary is enabled (though it's by default)
     }
 }
+
 
 // Jacoco + coveralls
 jacocoTestReport {
