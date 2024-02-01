@@ -25,7 +25,7 @@ class ReviewFileTest {
     void shoudthFail() {
         int test= 6;
         int test2 = 8;
-        assertThat(test.isEqualTo(test2);
+        assertThat(test.isEqualTo(test2));
     }
 
     @Test
