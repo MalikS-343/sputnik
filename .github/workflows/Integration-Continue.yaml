@@ -1,9 +1,9 @@
-name: Build pull request
+name: Integration-Continue
 on:
   pull_request:
   push:
 jobs:
-  build:
+  Integration-Continue:
     runs-on: ubuntu-latest
     steps:
       - name: Cancel previous runs
