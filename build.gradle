@@ -164,18 +164,9 @@ dependencies {
 
 test {
     useJUnitPlatform()
-
-    // Configure test logging
     testLogging {
-        // Show the results of all tests, including passed, failed, and skipped
-        events "passed", "failed", "skipped"
-        
-        // Additionally, you can customize the output for different test outcomes as follows:
-        showStandardStreams = true // Show standard out and standard error of the test execution
-        exceptionFormat = 'full'   // Use 'full' or 'short' or 'minimal'
-        
-        // For more detailed information during the test run, you can set the level to 'INFO' or 'DEBUG'
-        logging.level = LogLevel.INFO
+        events "passed", "failed" // Log passed and failed tests
+        exceptionFormat = 'short' // Use 'short' or 'full' depending on the desired detail for failures
     }
 }
 
