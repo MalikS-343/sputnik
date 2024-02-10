@@ -22,4 +22,4 @@ jobs:
         run: ./gradlew clean compileJava
 
       - name: Test Project
-        run: ./gradlew clean test --info
+        run: ./gradlew test
