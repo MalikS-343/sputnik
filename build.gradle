@@ -164,6 +164,10 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    testLogging {
+        events "passed", "failed" // Log passed and failed tests
+        exceptionFormat = 'short' // Use 'short' or 'full' depending on the desired detail for failures
+    }
 }
 
 // Jacoco + coveralls
