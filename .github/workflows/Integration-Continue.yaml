@@ -19,7 +19,7 @@ jobs:
           java-version: 8
 
       - name: Build project
-        run: ./gradlew build -x test
+        run: ./gradlew clean compileJava
 
       - name: Test Project
-        run: ./gradlew test
+        run: ./gradlew clean test --info
